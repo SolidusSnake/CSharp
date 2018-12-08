@@ -1,0 +1,11 @@
+C:\Users\wesley\source\repos\NewSurvey\NewSurvey\bin\Debug\netcoreapp2.0\NewSurvey.deps.json
+C:\Users\wesley\source\repos\NewSurvey\NewSurvey\bin\Debug\netcoreapp2.0\NewSurvey.runtimeconfig.json
+C:\Users\wesley\source\repos\NewSurvey\NewSurvey\bin\Debug\netcoreapp2.0\NewSurvey.runtimeconfig.dev.json
+C:\Users\wesley\source\repos\NewSurvey\NewSurvey\bin\Debug\netcoreapp2.0\NewSurvey.dll
+C:\Users\wesley\source\repos\NewSurvey\NewSurvey\bin\Debug\netcoreapp2.0\NewSurvey.pdb
+C:\Users\wesley\source\repos\NewSurvey\NewSurvey\obj\Debug\netcoreapp2.0\NewSurvey.csprojAssemblyReference.cache
+C:\Users\wesley\source\repos\NewSurvey\NewSurvey\obj\Debug\netcoreapp2.0\NewSurvey.csproj.CoreCompileInputs.cache
+C:\Users\wesley\source\repos\NewSurvey\NewSurvey\obj\Debug\netcoreapp2.0\NewSurvey.AssemblyInfoInputs.cache
+C:\Users\wesley\source\repos\NewSurvey\NewSurvey\obj\Debug\netcoreapp2.0\NewSurvey.AssemblyInfo.cs
+C:\Users\wesley\source\repos\NewSurvey\NewSurvey\obj\Debug\netcoreapp2.0\NewSurvey.dll
+C:\Users\wesley\source\repos\NewSurvey\NewSurvey\obj\Debug\netcoreapp2.0\NewSurvey.pdb

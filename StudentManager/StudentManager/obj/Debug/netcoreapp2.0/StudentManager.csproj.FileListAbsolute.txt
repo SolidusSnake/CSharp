@@ -1,0 +1,11 @@
+C:\Users\wesley\source\repos\StudentManager\StudentManager\bin\Debug\netcoreapp2.0\StudentManager.deps.json
+C:\Users\wesley\source\repos\StudentManager\StudentManager\bin\Debug\netcoreapp2.0\StudentManager.runtimeconfig.json
+C:\Users\wesley\source\repos\StudentManager\StudentManager\bin\Debug\netcoreapp2.0\StudentManager.runtimeconfig.dev.json
+C:\Users\wesley\source\repos\StudentManager\StudentManager\bin\Debug\netcoreapp2.0\StudentManager.dll
+C:\Users\wesley\source\repos\StudentManager\StudentManager\bin\Debug\netcoreapp2.0\StudentManager.pdb
+C:\Users\wesley\source\repos\StudentManager\StudentManager\obj\Debug\netcoreapp2.0\StudentManager.csprojAssemblyReference.cache
+C:\Users\wesley\source\repos\StudentManager\StudentManager\obj\Debug\netcoreapp2.0\StudentManager.csproj.CoreCompileInputs.cache
+C:\Users\wesley\source\repos\StudentManager\StudentManager\obj\Debug\netcoreapp2.0\StudentManager.AssemblyInfoInputs.cache
+C:\Users\wesley\source\repos\StudentManager\StudentManager\obj\Debug\netcoreapp2.0\StudentManager.AssemblyInfo.cs
+C:\Users\wesley\source\repos\StudentManager\StudentManager\obj\Debug\netcoreapp2.0\StudentManager.dll
+C:\Users\wesley\source\repos\StudentManager\StudentManager\obj\Debug\netcoreapp2.0\StudentManager.pdb

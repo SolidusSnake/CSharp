@@ -1,0 +1,11 @@
+C:\Users\wesley\source\repos\SchoolTracker\SchoolTracker\bin\Debug\netcoreapp2.0\SchoolTracker.deps.json
+C:\Users\wesley\source\repos\SchoolTracker\SchoolTracker\bin\Debug\netcoreapp2.0\SchoolTracker.runtimeconfig.json
+C:\Users\wesley\source\repos\SchoolTracker\SchoolTracker\bin\Debug\netcoreapp2.0\SchoolTracker.runtimeconfig.dev.json
+C:\Users\wesley\source\repos\SchoolTracker\SchoolTracker\bin\Debug\netcoreapp2.0\SchoolTracker.dll
+C:\Users\wesley\source\repos\SchoolTracker\SchoolTracker\bin\Debug\netcoreapp2.0\SchoolTracker.pdb
+C:\Users\wesley\source\repos\SchoolTracker\SchoolTracker\obj\Debug\netcoreapp2.0\SchoolTracker.csprojAssemblyReference.cache
+C:\Users\wesley\source\repos\SchoolTracker\SchoolTracker\obj\Debug\netcoreapp2.0\SchoolTracker.csproj.CoreCompileInputs.cache
+C:\Users\wesley\source\repos\SchoolTracker\SchoolTracker\obj\Debug\netcoreapp2.0\SchoolTracker.AssemblyInfoInputs.cache
+C:\Users\wesley\source\repos\SchoolTracker\SchoolTracker\obj\Debug\netcoreapp2.0\SchoolTracker.AssemblyInfo.cs
+C:\Users\wesley\source\repos\SchoolTracker\SchoolTracker\obj\Debug\netcoreapp2.0\SchoolTracker.dll
+C:\Users\wesley\source\repos\SchoolTracker\SchoolTracker\obj\Debug\netcoreapp2.0\SchoolTracker.pdb

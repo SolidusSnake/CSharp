@@ -1,0 +1,10 @@
+C:\Users\wesley\source\repos\Survey\Survey\bin\Debug\netcoreapp2.0\Survey.deps.json
+C:\Users\wesley\source\repos\Survey\Survey\bin\Debug\netcoreapp2.0\Survey.runtimeconfig.json
+C:\Users\wesley\source\repos\Survey\Survey\bin\Debug\netcoreapp2.0\Survey.runtimeconfig.dev.json
+C:\Users\wesley\source\repos\Survey\Survey\bin\Debug\netcoreapp2.0\Survey.dll
+C:\Users\wesley\source\repos\Survey\Survey\bin\Debug\netcoreapp2.0\Survey.pdb
+C:\Users\wesley\source\repos\Survey\Survey\obj\Debug\netcoreapp2.0\Survey.csproj.CoreCompileInputs.cache
+C:\Users\wesley\source\repos\Survey\Survey\obj\Debug\netcoreapp2.0\Survey.AssemblyInfoInputs.cache
+C:\Users\wesley\source\repos\Survey\Survey\obj\Debug\netcoreapp2.0\Survey.AssemblyInfo.cs
+C:\Users\wesley\source\repos\Survey\Survey\obj\Debug\netcoreapp2.0\Survey.dll
+C:\Users\wesley\source\repos\Survey\Survey\obj\Debug\netcoreapp2.0\Survey.pdb
