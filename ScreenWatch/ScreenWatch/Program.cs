@@ -77,7 +77,7 @@ namespace ScreenWatch
 
         static void SendWakeup()
         {
-            System.Threading.Thread.Sleep(100); // time in ms
+            System.Threading.Thread.Sleep(60000); // time in ms
             SendKeys.SendWait("{NUMLOCK}");
         }
 
