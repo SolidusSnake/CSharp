@@ -34,8 +34,12 @@ namespace ScreenWatch
             else if(timeline.ToLower() == "n")
             {
                 Console.Write("Number of hours to run ScreenWatch: ");
-                var hoursInput = int.Parse(Console.ReadLine());
-                var timeDuration = TimeSpan.FromHours(hoursInput);
+                //var hoursInput = int.Parse(Console.ReadLine());
+                string hoursInput = Console.ReadLine();
+                if (String.IsNullOrEmpty(hoursInput))
+                   hoursInput = "1";
+
+                var timeDuration = TimeSpan.FromHours(int.Parse(hoursInput));
                 int mm = timeDuration.Hours * 60;
 
                 for (int i = mm; i >= 0; i--)
