@@ -4,8 +4,11 @@ namespace NewSurvey
 {
     class Program
     {
+        static public event Action Posted;
         static void Main(string[] args)
         {
+            var stats = new Stats();
+            stats.Start();
             var newParticipant = new Participant();
 
             Console.WriteLine("What is your name? ");
@@ -16,6 +19,9 @@ namespace NewSurvey
 
             Console.WriteLine("What month were you born? ");
             newParticipant.Birthday = TryAnswer();
+
+            if(Posted != null)
+                Posted();
 
             newParticipant.Display();
         }

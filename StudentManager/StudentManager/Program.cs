@@ -15,12 +15,18 @@ namespace StudentManager
 
         static void Main(string[] args)
         {
+            Logger.Log("Tracker started", priority: 0);
+            PayRoll payroll = new PayRoll();
+            payroll.PayAll();
+
             var adding = true;
 
             while(adding)
             {
                 try
                 {
+                    Logger.Log("Adding new student");
+
                     var newStudent = new Student();
 
                     newStudent.Name = Util.Console.Ask("Student Name: ");
@@ -54,6 +60,7 @@ namespace StudentManager
             }
 
         }
+            ShowGrade("Tom");
 
             foreach (var student in students)
             {
@@ -88,27 +95,30 @@ namespace StudentManager
                 }
             }
         }
+
+        static void ShowGrade(string name)
+        {
+            var found = students.Find(student => student.Name == name);
+
+            Console.WriteLine("{0}'s Grade: {1}", found.Name, found.Grade);
+        }
     }
 
     class Member
     {
-        public string Name;
-        public string Address;
-        protected string phone;
-
-        public string Phone
-        {
-            set { phone = value; }
-        }
+        public string Name { get; set; }
+        public string Address { get; set; }
+        public string phone { get; set; }
     }
 
     class Student : Member
     {
-        static public int Count = 0;
+        static public int Count { get; set; } = 0;
 
-        public int Grade;
-        public string Birthday;
-        public School School;
+        public int Grade { get; set; }
+        public string Birthday { get; set; }
+        public School School { get; set; }
+        public string Phone { get; internal set; }
 
         public Student()
         {
@@ -123,10 +133,5 @@ namespace StudentManager
             Address = address;
             Phone = phone;
         }
-    }
-
-    class Teacher : Member
-    {
-        public string Subject;
     }
 }
