@@ -4,6 +4,7 @@ using System.Runtime.InteropServices;
 using System.Collections.Generic;
 using System.Threading;
 using System.Windows.Forms;
+using System.Media;
 
 namespace ScreenWatch
 {
@@ -76,24 +77,32 @@ namespace ScreenWatch
 
         static void SendWakeup()
         {
-            System.Threading.Thread.Sleep(60000); // time in ms
+            System.Threading.Thread.Sleep(100); // time in ms
             SendKeys.SendWait("{NUMLOCK}");
         }
 
         static void PlayWarning()
         {
+            // Built-in Windows 10 sound
+            //SoundPlayer PlayWarning = new SoundPlayer("C:\\windows\\media\\Alarm02.wav");
+            System.IO.Stream str = Properties.Resources.mario_06;
+            System.Media.SoundPlayer warning = new System.Media.SoundPlayer(str);
+            warning.Play();
+
+            // PlayWarning.PlaySync();
+
             // Mario Bros. intro 
-            Console.Beep(659, 125);
-            Console.Beep(659, 125);
-            System.Threading.Thread.Sleep(125);
-            Console.Beep(659, 125);
-            System.Threading.Thread.Sleep(167);
-            Console.Beep(523, 125);
-            Console.Beep(659, 125);
-            System.Threading.Thread.Sleep(125);
-            Console.Beep(784, 125);
-            System.Threading.Thread.Sleep(375);
-            Console.Beep(392, 125);
+            //Console.Beep(659, 125);
+            //Console.Beep(659, 125);
+            //System.Threading.Thread.Sleep(125);
+            //Console.Beep(659, 125);
+            //System.Threading.Thread.Sleep(167);
+            //Console.Beep(523, 125);
+            //Console.Beep(659, 125);
+            //System.Threading.Thread.Sleep(125);
+            //Console.Beep(784, 125);
+            //System.Threading.Thread.Sleep(375);
+            //Console.Beep(392, 125);
         }
     }
 }
