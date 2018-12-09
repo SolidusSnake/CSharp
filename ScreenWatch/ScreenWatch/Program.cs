@@ -11,6 +11,7 @@ namespace ScreenWatch
     {
         static void Main(string[] args)
         {
+            Console.Title = "ScreenWatch";
             Console.WriteLine("ScreenWatch running...\n");
             Console.Write("Run indefinitely (Y/N): ");
             var timeline = Console.ReadLine();
@@ -24,6 +25,7 @@ namespace ScreenWatch
                     SendWakeup();
                     TimeSpan ts = watch.Elapsed;
                     string elapsedTime = String.Format("{0:00}h {1:00}m", ts.Hours, ts.Minutes);
+                    Console.Clear();
                     Console.WriteLine("Runtime " + elapsedTime);
                 }
             }
