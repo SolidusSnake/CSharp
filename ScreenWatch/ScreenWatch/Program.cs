@@ -17,9 +17,16 @@ namespace ScreenWatch
 
             if(timeline.ToLower() == "y")
             {
-                while(true)
+                Stopwatch watch = new Stopwatch();
+                watch.Start();
+                while (true)
                 {
+                    
                     SendWakeup();
+                    TimeSpan ts = watch.Elapsed;
+
+                    string elapsedTime = String.Format("{0:00}h {1:00}m", ts.Hours, ts.Minutes);
+                    Console.WriteLine("Runtime " + elapsedTime);
                 }
             }
 
