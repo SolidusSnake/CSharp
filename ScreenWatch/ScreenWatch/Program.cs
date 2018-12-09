@@ -21,10 +21,8 @@ namespace ScreenWatch
                 watch.Start();
                 while (true)
                 {
-                    
                     SendWakeup();
                     TimeSpan ts = watch.Elapsed;
-
                     string elapsedTime = String.Format("{0:00}h {1:00}m", ts.Hours, ts.Minutes);
                     Console.WriteLine("Runtime " + elapsedTime);
                 }
@@ -51,18 +49,7 @@ namespace ScreenWatch
 
                     if (i == 1)
                     {
-                        // Mario Bros. intro 
-                        Console.Beep(659, 125);
-                        Console.Beep(659, 125);
-                        System.Threading.Thread.Sleep(125);
-                        Console.Beep(659, 125);
-                        System.Threading.Thread.Sleep(167);
-                        Console.Beep(523, 125);
-                        Console.Beep(659, 125);
-                        System.Threading.Thread.Sleep(125);
-                        Console.Beep(784, 125);
-                        System.Threading.Thread.Sleep(375);
-                        Console.Beep(392, 125);
+                        PlayWarning();
                     }
 
                     if (i == 0)
@@ -82,8 +69,24 @@ namespace ScreenWatch
 
         static void SendWakeup()
         {
-            System.Threading.Thread.Sleep(500); // time in ms
+            System.Threading.Thread.Sleep(60000); // time in ms
             SendKeys.SendWait("{NUMLOCK}");
+        }
+
+        static void PlayWarning()
+        {
+            // Mario Bros. intro 
+            Console.Beep(659, 125);
+            Console.Beep(659, 125);
+            System.Threading.Thread.Sleep(125);
+            Console.Beep(659, 125);
+            System.Threading.Thread.Sleep(167);
+            Console.Beep(523, 125);
+            Console.Beep(659, 125);
+            System.Threading.Thread.Sleep(125);
+            Console.Beep(784, 125);
+            System.Threading.Thread.Sleep(375);
+            Console.Beep(392, 125);
         }
     }
 }
