@@ -12,6 +12,7 @@ namespace ScreenWatch
         static void Main(string[] args)
         {
             Console.Title = "ScreenWatch";
+            Console.SetWindowSize(60, 15);
             Console.WriteLine("ScreenWatch running...\n");
             Console.Write("Run indefinitely (Y/N): ");
             var timeline = Console.ReadLine();
