@@ -33,13 +33,12 @@ namespace ScreenWatch
                 for (int i = mm; i >= 0; i--)
                 {
                     SendWakeup();
-                    //Console.WriteLine("Time left: {0} minutes", i);
 
                     Console.Clear();
                     Console.WriteLine("=================================================");
                     Console.WriteLine("                  DIFFUSE THE BOMB");
                     Console.WriteLine("");
-                    Console.WriteLine("                Time Remaining:  " + i.ToString());
+                    Console.WriteLine("                Time Remaining:  " + i.ToString() + " minutes");
                     Console.WriteLine("");
                     Console.WriteLine("=================================================");
 
@@ -57,7 +56,6 @@ namespace ScreenWatch
                         Console.Beep(784, 125);
                         System.Threading.Thread.Sleep(375);
                         Console.Beep(392, 125);
-                        //Console.WriteLine("ScreenWatch ending soon...");
                     }
 
                     if (i == 0)
@@ -77,7 +75,7 @@ namespace ScreenWatch
 
         static void SendWakeup()
         {
-            System.Threading.Thread.Sleep(500);
+            System.Threading.Thread.Sleep(500); // time in ms
             SendKeys.SendWait("{NUMLOCK}");
         }
     }
