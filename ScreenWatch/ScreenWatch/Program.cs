@@ -12,18 +12,15 @@ namespace ScreenWatch
             Console.SetWindowSize(60, 15);
             Console.WriteLine("ScreenWatch running...\n");
             
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
             while (true)
             {
-                Stopwatch watch = new Stopwatch();
-                watch.Start();
-                while (true)
-                {
-                    SendWakeup();
-                    TimeSpan ts = watch.Elapsed;
-                    string elapsedTime = String.Format("{0:00}h {1:00}m", ts.Hours, ts.Minutes);
-                    Console.Clear();
-                    Console.WriteLine("Runtime: " + elapsedTime);
-                }
+                SendWakeup();
+                TimeSpan ts = watch.Elapsed;
+                string elapsedTime = String.Format("{0:00}h {1:00}m", ts.Hours, ts.Minutes);
+                Console.Clear();
+                Console.WriteLine("Runtime: " + elapsedTime);
             }
         }
 

@@ -28,6 +28,7 @@ namespace ScreenWatchGUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.timeElapsed = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
@@ -41,7 +42,7 @@ namespace ScreenWatchGUI
             this.timeElapsed.Name = "timeElapsed";
             this.timeElapsed.ReadOnly = true;
             this.timeElapsed.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.timeElapsed.Size = new System.Drawing.Size(183, 96);
+            this.timeElapsed.Size = new System.Drawing.Size(365, 96);
             this.timeElapsed.TabIndex = 4;
             this.timeElapsed.Text = "";
             this.timeElapsed.TextChanged += new System.EventHandler(this.timeElapsed_TextChanged);
@@ -50,13 +51,14 @@ namespace ScreenWatchGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(207, 120);
+            this.ClientSize = new System.Drawing.Size(389, 120);
             this.Controls.Add(this.timeElapsed);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "ScreenWatch";
             this.ResumeLayout(false);
 
         }

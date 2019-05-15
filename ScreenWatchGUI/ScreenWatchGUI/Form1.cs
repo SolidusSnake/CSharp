@@ -19,7 +19,7 @@ namespace ScreenWatchGUI
         {
             InitializeComponent();
         }
-        -
+        
         private void timeElapsed_TextChanged(object sender, EventArgs e)
         {
 
