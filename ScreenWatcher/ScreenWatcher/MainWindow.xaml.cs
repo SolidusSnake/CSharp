@@ -20,7 +20,7 @@ namespace ScreenWatcher
             InitializeComponent();
 
             timer = new DispatcherTimer(new TimeSpan(0, 0, 0, 0, 50), DispatcherPriority.Background, Timer_Tick, Dispatcher.CurrentDispatcher);
-            sendkey = new DispatcherTimer(new TimeSpan(0,0,5), DispatcherPriority.Background, Timer_Sendkey, Dispatcher.CurrentDispatcher);
+            sendkey = new DispatcherTimer(new TimeSpan(0,1,0), DispatcherPriority.Background, Timer_Sendkey, Dispatcher.CurrentDispatcher);
             timer.IsEnabled = true;
             sendkey.IsEnabled = true;
             start = DateTime.Now;
