@@ -1,0 +1,16 @@
+﻿<Window x:Class="ScreenWatcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScreenWatcher"
+        mc:Ignorable="d"
+        Title="ScreenWatcher" Height="326.47" Width="390.336" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" Background="Black">
+    <Grid>
+        <Button x:Name="buttonClose" Content="X" HorizontalAlignment="Left" Margin="325,10,0,0" VerticalAlignment="Top" Width="55" Height="44" FontSize="18" FontFamily="Lucida Console" Background="Black" Foreground="Lime" Click="ButtonClose_Click"/>
+        <Button x:Name="buttonMinimize" Content="-" HorizontalAlignment="Left" Margin="265,10,0,0" VerticalAlignment="Top" Width="55" Height="44" FontSize="18" FontFamily="Lucida Console" Background="Black" Foreground="Lime" Click="ButtonMinimize_Click"/>
+        <Image x:Name="heartbeet_icon" HorizontalAlignment="Left" Height="59" Margin="10,0,0,0" VerticalAlignment="Top" Width="65" Source="heartbeat.ico"/>
+        <Label x:Name="labelRuntime" Content="Runtime" HorizontalAlignment="Left" Margin="10,93,0,0" VerticalAlignment="Top" Height="63" Width="181" FontSize="36" FontFamily="Lucida Console" Foreground="Lime"/>
+        <Label x:Name="labelTimer" Content="" HorizontalAlignment="Left" Margin="10,161,0,0" VerticalAlignment="Top" Height="63" Width="181" FontFamily="Lucida Console" FontSize="36" Foreground="Lime"/>
+    </Grid>
+</Window>
