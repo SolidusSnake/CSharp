@@ -28,7 +28,9 @@ namespace ScreenWatcher
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            labelTimer.Content = Convert.ToString(DateTime.Now - start);
+            //labelTimer.Content = Convert.ToString(DateTime.Now - start);
+            labelTimer.Content = String.Format("{0:00}:{1:00}:{2:00}", (DateTime.Now - start).TotalHours, (DateTime.Now - start).TotalMinutes, (DateTime.Now - start).TotalSeconds);
+            
         }
 
         private void Timer_Sendkey(object sender, EventArgs e)
