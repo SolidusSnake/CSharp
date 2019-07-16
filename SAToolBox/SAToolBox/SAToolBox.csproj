@@ -47,10 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="net.cs" />
-    <Compile Include="nfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="toolbox.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

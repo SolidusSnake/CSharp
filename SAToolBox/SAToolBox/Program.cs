@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.Win32;
 using System.Net;
 using System.Net.NetworkInformation;
+using System.Threading;
 
 namespace SAToolBox
 {
@@ -17,6 +18,7 @@ namespace SAToolBox
 
             while (!done)
             {
+                Console.Clear();
                 Console.WriteLine("MAIN MENU\n");
                 Console.WriteLine("[0]\tSYSTEM INFO");
                 Console.WriteLine("[1]\tNETWORKING");
@@ -30,56 +32,100 @@ namespace SAToolBox
                 Console.WriteLine("[99]\tEXIT\n");
 
                 Console.Write("Make a selection:  ");
-                var menuSel = int.Parse(Console.ReadLine());
 
-                switch (menuSel)
+                try
                 {
-                    case 0:
-                        Console.Clear();
-                        Console.WriteLine("SYSTEM INFO\n");
-                        nfo.ReturnInfo();
-                        Console.ReadLine();
-                        break;
+                    var menuSel = int.Parse(Console.ReadLine());
 
-                    case 1:
-                        Console.Clear();
-                        Console.WriteLine("NETWORKING\n");
-                        net.ReturnInfo();
-                        Console.ReadLine();
-                        break;
+                    switch (menuSel)
+                    {
+                        case 0:
+                            Console.Clear();
+                            Console.WriteLine("SYSTEM INFO\n");
+                            toolbox.ReturnSystemInfo();
+                            Console.ReadLine();
+                            break;
 
-                    case 2:
-                        Console.WriteLine("MEMORY\n");
-                        break;
+                        case 1:
 
-                    case 3:
-                        Console.WriteLine("CPU\n");
-                        break;
+                            bool netDone = false;
 
-                    case 4:
-                        Console.WriteLine("DISK\n");
-                        break;
+                            while (!netDone)
+                            {
+                                Console.Clear();
+                                Console.WriteLine("NETWORKING\n");
+                                Console.WriteLine("[0]\tPING GATEWAY");
+                                Console.WriteLine("[1]\tPORT QUERY");
+                                Console.WriteLine("[99]\tEXIT\n");
 
-                    case 5:
-                        Console.WriteLine("EVENT LOG\n");
-                        break;
+                                Console.Write("Make a selection:  ");
+                                try
+                                {
+                                    var netSel = int.Parse(Console.ReadLine());
 
-                    case 6:
-                        Console.WriteLine("UPDATES\n");
-                        break;
+                                    switch (netSel)
+                                    {
+                                        case 0:
+                                            toolbox.PingGateway();
+                                            break;
 
-                    case 7:
-                        Console.WriteLine("MCAFEE\n");
-                        break;
+                                        case 1:
+                                            toolbox.PortQuery();
+                                            Console.WriteLine("\nPress Enter...");
+                                            Console.ReadLine();
+                                            break;
 
-                    case 8:
-                        Console.WriteLine("PASSWORD GENERATOR\n");
-                        break;
+                                        case 99:
+                                            netDone = true; break;
+                                    }
+                                }
+                                catch (Exception ex)
+                                {
+                                    Console.WriteLine("\n" + ex.Message.ToUpper());
+                                    Thread.Sleep(3000);
+                                }
+                            }
 
-                    case 99:
-                        Console.WriteLine("EXIT");
-                        System.Environment.Exit(0);
-                        break;
+                            break;
+
+                        case 2:
+                            Console.WriteLine("MEMORY\n");
+                            break;
+
+                        case 3:
+                            Console.WriteLine("CPU\n");
+                            break;
+
+                        case 4:
+                            Console.WriteLine("DISK\n");
+                            break;
+
+                        case 5:
+                            Console.WriteLine("EVENT LOG\n");
+                            break;
+
+                        case 6:
+                            Console.WriteLine("UPDATES\n");
+                            break;
+
+                        case 7:
+                            Console.WriteLine("MCAFEE\n");
+                            break;
+
+                        case 8:
+                            Console.WriteLine("PASSWORD GENERATOR\n");
+                            break;
+
+                        case 99:
+                            Console.WriteLine("EXIT");
+                            System.Environment.Exit(0);
+                            break;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("\n" + ex.Message.ToUpper());
+                    Thread.Sleep(3000);
                 }
             }
         }
